@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => (
   <div className="center">
-    <h2>Bem Vindo ao Basic Bank</h2>
-    <br />
-    <h5>Crie uma nova conta para começar a utilizar nossos recursos</h5>
+    <h2>Welcome</h2>
     <br />
     <Link className="btn" to="/user/add">
-      Criar nova conta
+      Create new account
     </Link>
   </div>
 );

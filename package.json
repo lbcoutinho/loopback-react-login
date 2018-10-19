@@ -1,5 +1,5 @@
 {
-  "name": "meetupz",
+  "name": "loopback-react-login",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
@@ -30,6 +30,6 @@
     "type": "",
     "url": ""
   },
-  "license": "UNLICENSED",
-  "description": "meetupz"
+  "license": "MIT",
+  "description": "App with LoopBack & React with simple login and home page"
 }

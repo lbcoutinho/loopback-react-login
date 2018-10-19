@@ -1,11 +1,11 @@
 {
   "db": {
-    "host": "ds123956.mlab.com",
+    "host": "",
     "port": 23956,
-    "database": "basic-bank",
-    "user": "admin",
+    "database": "",
     "password": "",
     "name": "db",
+    "user": "admin",
     "connector": "mongodb"
   }
 }

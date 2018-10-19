@@ -1,13 +1,14 @@
-# Full Stack LoopBack & React Application
+# LoopBack & React Application
 
-### Usage
+### LoopBack server Usage
 
 From the root folder, install the dependencies
 
 ```sh
 $ npm install
 ```
-To run the server
+
+Setup your datasource in "server/datasources.json" and run the server
 
 ```sh
 $ npm start

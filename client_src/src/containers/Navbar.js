@@ -6,8 +6,7 @@ class Navbar extends React.Component {
 
   render(){
     const options = [
-      {path:'/',icon:'fa-users',title:'Meetups'},
-      {path:'/meetups/add',icon:'fa-plus',title:'Add Meetup'}
+      {path:'/home',icon:'fa-home',title:'Home'}
     ]
 
     let button;
@@ -23,7 +22,7 @@ class Navbar extends React.Component {
       <div>
         <nav className="blue darken-3">
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo center">Basic Bank</a>
+            <a href={this.props.isAuthed ? "/home" : "/"} className="brand-logo center">LoopBack & React Login</a>
             <ul className="right">
               {button}
             </ul>
