@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { login } from '../services/LoginServices';
+import { login } from '../../services/LoginServices';
 
 class AddUser extends Component {
   async addUser(newUser) {
@@ -12,10 +12,7 @@ class AddUser extends Component {
         data: newUser
       });
 
-      login({ email: newUser.email, password: newUser.password });
-
-      // Send use back to homepage
-      this.props.history.push('/');
+      login({ email: newUser.email, password: newUser.password }, this.props.history);
     } catch (err) {
       console.error(err);
     }

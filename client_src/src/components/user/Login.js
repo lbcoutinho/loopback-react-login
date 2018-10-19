@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { login } from '../services/LoginServices';
+import { login } from '../../services/LoginServices';
 
 class Login extends Component {
   onSubmit(e) {
@@ -7,7 +7,8 @@ class Login extends Component {
       email: this.refs.email.value,
       password: this.refs.password.value
     };
-    login(credentials);
+    login(credentials, this.props.history);
+
     e.preventDefault();
   }
 
