@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
-import { login } from '../../services/LoginServices';
+import { login } from '../../services/AuthServices';
 
-class AddUser extends Component {
+class AddUser extends React.Component {
   async addUser(newUser) {
     try {
       // Send POST request to create user
@@ -12,7 +12,7 @@ class AddUser extends Component {
         data: newUser
       });
 
-      login({ email: newUser.email, password: newUser.password }, this.props.history);
+      login({ email: newUser.email, password: newUser.password }, this.props.setAuth, this.props.history.push);
     } catch (err) {
       console.error(err);
     }

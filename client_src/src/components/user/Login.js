@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { login } from '../../services/LoginServices';
+import React from 'react';
+import { login } from '../../services/AuthServices';
 
-class Login extends Component {
+class Login extends React.Component {
   onSubmit(e) {
     const credentials = {
       email: this.refs.email.value,
       password: this.refs.password.value
     };
-    login(credentials, this.props.history);
+    login(credentials, this.props.setAuth, this.props.history.push);
 
     e.preventDefault();
   }
